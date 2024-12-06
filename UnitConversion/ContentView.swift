@@ -111,6 +111,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             Form{
+                Section("Unit Conversion"){
+                    Text("Enter the value below:").fontWeight(.semibold)
+                }
                 TextField("Enter your value here:", value:$inputUser, format: .number.precision(.significantDigits(1...4)))
                 Picker("", selection: $unitInput){
                     ForEach(selectedUnit, id: \.self){
@@ -144,7 +147,6 @@ struct ContentView: View {
                 }
             }
             .frame(width: 100, height: 30)
-            .foregroundColor(.accentColor)
             .font(.title3)
             
         }
