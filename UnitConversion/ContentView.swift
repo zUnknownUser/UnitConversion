@@ -9,15 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    // celsius para Farh Done
-    // celsius para kelvin Done
-    //kelvin para celsius
-    // kelvin para farh Done
-    // farh para celsius Done
-    // farh para kelvin Done
-    
-    
-    
     @State private var inputUser = 0.0
     @State private var outputUser = 0.0
     @State private var unitOutPut = "Farh"
